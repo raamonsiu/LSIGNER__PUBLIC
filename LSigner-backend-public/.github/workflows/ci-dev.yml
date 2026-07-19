@@ -1,0 +1,98 @@
+name: CI Dev Push
+
+# Runs on every push to dev: spins up a real Postgres service and validates
+# the branch end-to-end (lint, format, unit tests, migrations, e2e, build).
+on:
+  push:
+    branches:
+      - dev
+
+permissions:
+  contents: read
+
+jobs:
+  integration:
+    name: Validate dev branch
+    runs-on: ubuntu-latest
+
+    # Ephemeral Postgres container used as the test database for this run.
+    services:
+      postgres:
+        image: postgres:16
+        # These POSTGRES_* vars configure the postgres Docker image itself
+        # (how it initializes its own user/password/database), so they must
+        # use the names the image expects. The DB_* vars below configure how
+        # the application connects to that same database, so they are
+        # redeclared under different names to match the app's own config.
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+          POSTGRES_DB: lsigner_test
+        ports:
+          - 5432:5432
+        # Waits for Postgres to accept connections before steps run against it.
+        options: >-
+          --health-cmd="pg_isready -U postgres -d lsigner_test"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=5
+
+    # Application environment used by the app/tests to connect to the
+    # postgres service above and to run in a test configuration.
+    env:
+      NODE_ENV: test
+      APP_ENV: test
+      DB_HOST: localhost
+      DB_PORT: 5432
+      DB_NAME: lsigner_test
+      DB_USER: postgres
+      DB_PASSWORD: postgres
+      DB_SSL: false
+      DB_SSL_REJECT_UNAUTHORIZED: false
+      DB_LOGGING: false
+      TYPEORM_SYNC: false
+      JWT_SECRET: test-secret
+      JWT_EXPIRES_IN: 15m
+      JWT_REFRESH_EXPIRES_IN: 7d
+      CORS_ORIGINS: http://localhost:3000
+      OTP_TTL_SECONDS: 10
+      OTP_RESEND_COOLDOWN_SECONDS: 1
+
+    # It executes various steps. If one fails, the pipeline stops and is marked as failed (before stopping, it executes a hidden step to reclaim resources and delete)
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      # Fails the build on known critical-severity vulnerabilities in dependencies.
+      - name: Audit dependencies
+        run: npm audit --audit-level=critical
+
+      - name: Run linter
+        run: npm run lint
+
+      - name: Check formatting
+        run: npm run format:check
+
+      - name: Run unit tests
+        run: npm run test:unit
+
+      # Applies migrations against the postgres service to verify the schema
+      # is consistent before running e2e tests against it.
+      - name: Run database migrations
+        run: npm run migration:run
+
+      - name: Run e2e tests
+        run: npm run test:e2e
+
+      # Confirms the app compiles/builds successfully, without publishing anything.
+      - name: Build application
+        run: npm run build

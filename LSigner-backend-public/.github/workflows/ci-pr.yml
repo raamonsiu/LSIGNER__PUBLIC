@@ -1,0 +1,51 @@
+name: CI Pull Request
+
+# Runs on PRs targeting dev: a lightweight gate (no database) that lints,
+# checks formatting, runs unit tests and builds the app.
+on:
+  pull_request:
+    branches:
+      - dev
+
+permissions:
+  contents: read
+
+jobs:
+  ci:
+    name: Lint, format, test and build
+    runs-on: ubuntu-latest
+
+    # It executes various steps. If one fails, the pipeline stops and is marked as failed (before stopping, it executes a hidden step to reclaim resources and delete)
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      # Fails the build on known critical-severity vulnerabilities in dependencies.
+      - name: Audit dependencies
+        run: npm audit --audit-level=critical
+
+      # Lints, then fails the job if linting auto-fixed anything the author
+      # didn't commit (i.e. the working tree is no longer clean).
+      - name: Run linter
+        run: |
+          npm run lint
+          git diff --exit-code
+
+      - name: Check formatting
+        run: npm run format:check
+
+      - name: Run unit tests
+        run: npm run test:unit
+
+      # Confirms the app compiles/builds successfully, without publishing anything.
+      - name: Build application
+        run: npm run build
