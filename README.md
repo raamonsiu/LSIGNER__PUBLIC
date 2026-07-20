@@ -1,1 +1,2 @@
-# LSIGNER__PUBLIC
+1: El vídeo és molt gran i GitHub no el mostra. Amb un clic es pot descarregar i es pot visualitzar.
+2: Les carpetes de codi, tan la de frontend com la de backend, contenen tot el codi. Hi ha codi que no és important per a l'avaluació del PFG, com ara els fitxers de configuració interna del framework o llibreries, o els fitxers d'especificacions de les proves realitzades, però s'han afegit per complimentar.
