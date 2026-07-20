@@ -1,0 +1,16 @@
+node_modules
+.next
+.git
+.gitignore
+.env*
+coverage
+logs
+**/*.md
+!src/content/legal/**/*.md
+npm-debug.log
+.vscode
+.idea
+eslint.config.mjs
+.prettierrc
+vitest.config.*
+vitest.setup.*

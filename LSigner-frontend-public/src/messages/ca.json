@@ -1,0 +1,581 @@
+{
+  "common": {
+    "brand": {
+      "title": "LSigner",
+      "subtitle": "Proveïdor de Signatura Electrònica",
+      "tagline": "Espai de treball de confiança"
+    },
+    "theme": {
+      "light": "Mode clar",
+      "dark": "Mode fosc"
+    },
+    "language": {
+      "en": "English",
+      "es": "Español",
+      "ca": "Català"
+    },
+    "google_placeholder": {
+      "login": "Pròximament — inici de sessió amb Google",
+      "register": "Pròximament — registre amb Google"
+    },
+    "coming_soon": "Pròximament"
+  },
+  "nav": {
+    "home": "Inici",
+    "sent": "Enviats",
+    "received": "Rebut",
+    "history": "Historial",
+    "contacts": "Contactes",
+    "security": "Seguretat",
+    "settings": "Configuració",
+    "new_document": "Nou Document"
+  },
+  "login": {
+    "page": {
+      "title": "Iniciar sessió",
+      "subtitle": "Accedeix al teu espai de documents segur"
+    },
+    "form": {
+      "email_label": "Correu electrònic",
+      "email_required": "El correu és obligatori",
+      "email_invalid": "Introdueix un correu vàlid",
+      "password_label": "Contrasenya",
+      "password_required": "La contrasenya és obligatòria",
+      "show_password": "Mostra contrasenya",
+      "hide_password": "Amaga contrasenya",
+      "forgot_password": "Has oblidat la contrasenya?",
+      "submit": "Iniciar sessió",
+      "submitting": "Iniciant sessió…"
+    },
+    "divider": "O",
+    "google": "Continua amb Google",
+    "register_link": "No tens compte?",
+    "register_link_action": "Registra't",
+    "expired_session": "La teva sessió ha caducat. Si us plau, inicia sessió de nou."
+  },
+  "register": {
+    "page": {
+      "title": "Crear compte",
+      "subtitle": "Completa les dades per registrar-te"
+    },
+    "form": {
+      "name_label": "Nom",
+      "name_required": "El nom és obligatori",
+      "last_name_label": "Cognoms",
+      "last_name_required": "Els cognoms són obligatoris",
+      "email_label": "Correu electrònic",
+      "email_required": "El correu és obligatori",
+      "email_invalid": "Introdueix un correu vàlid",
+      "country_label": "País",
+      "country_required": "El país és obligatori",
+      "phone_label": "Telèfon",
+      "phone_required": "El telèfon és obligatori",
+      "phone_placeholder": "Format E.164, ex. +34600000000",
+      "phone_invalid": "Format E.164 requerit (ex. +34600000000)",
+      "national_id_label": "DNI / NIF (opcional)",
+      "passport_label": "Passaport (opcional)",
+      "password_label": "Contrasenya",
+      "password_required": "La contrasenya és obligatòria",
+      "password_min_length": "Mínim 8 caràcters",
+      "password_too_short": "La contrasenya ha de tenir almenys 8 caràcters",
+      "confirm_password_label": "Confirma contrasenya",
+      "passwords_mismatch": "Les contrasenyes no coincideixen",
+      "show_password": "Mostra contrasenya",
+      "hide_password": "Amaga contrasenya",
+      "submit": "Crear compte",
+      "submitting": "Creant compte…"
+    },
+    "divider": "O",
+    "google": "Continua amb Google",
+    "login_link": "Ja tens compte?",
+    "login_link_action": "Inicia sessió",
+    "legal": "En crear un compte, acceptes els",
+    "legal_terms": "Termes de servei",
+    "legal_connector": "i la",
+    "legal_privacy": "Política de privacitat",
+    "success_message": "Compte creat correctament. Inicia sessió."
+  },
+  "dashboard": {
+    "metrics": {
+      "pending_signature": "Pendent de la teva signatura",
+      "view_all": "Veure tots",
+      "waiting_for_others": "Esperant altres",
+      "view_status": "Veure estat"
+    },
+    "security": {
+      "badge": "SEGUR",
+      "title": "Seguretat del Compte",
+      "description": "Estat de seguretat òptim. Biometria i 2FA activats.",
+      "strength": "Robustesa"
+    },
+    "upload": {
+      "title": "Pujar Document",
+      "drag_hint": "Arrossega un PDF o Word",
+      "select": "Selecciona un document",
+      "compatibility": "Compatible amb .pdf, .docx, .txt · Màx. 150 MB",
+      "button": "Pujar document"
+    },
+    "recent_documents": "Documents Recents",
+    "recent_sent_label": "Enviat",
+    "recent_received_label": "Rebut",
+    "messages": {
+      "load_error": "No s'han pogut carregar les dades del tauler.",
+      "retry": "Reintentar",
+      "empty": "No hi ha documents recents"
+    },
+    "status": {
+      "draft": "Esborrany",
+      "voided": "Anul·lat",
+      "replaced": "Reemplaçat",
+      "waiting": "Esperant",
+      "completed": "Completat"
+    }
+  },
+  "sent_documents": {
+    "metrics": {
+      "total_sent": "Total enviats",
+      "pending_final_signature": "Pendents de signatura final",
+      "unique_recipients": "Destinataris únics",
+      "completed": "Completats",
+      "total": "Total destinataris",
+      "pending": "Pendents",
+      "signed": "Signats",
+      "rejected": "Rebutjats",
+      "revoked": "Revocats"
+    },
+    "list": {
+      "title": "Documents enviats",
+      "subtitle": "Una fila per destinatari — veu qui ha signat i qui està pendent."
+    },
+    "fields": {
+      "size": "Pes",
+      "sent_at": "Enviat",
+      "signed_at": "Signat",
+      "recipient": "Destinatari",
+      "recipient_email": "Correu del destinatari",
+      "document": "Document",
+      "status": "Estat"
+    },
+    "status": {
+      "draft": "Esborrany",
+      "waiting": "Esperant",
+      "completed": "Completat",
+      "voided": "Anul·lat",
+      "superseded": "Reemplaçat",
+      "deleted": "Eliminat"
+    },
+    "recipient_status": {
+      "pending": "Pendent",
+      "signed": "Signat",
+      "rejected": "Rebutjat",
+      "revoked": "Revocat"
+    },
+    "modal": {
+      "title": "Detall del document",
+      "close": "Tanca",
+      "view_document": "Veure document",
+      "opening_document": "Obrint...",
+      "send_reminder": "Enviar recordatori",
+      "sending_reminder": "Enviant...",
+      "delete_document": "Eliminar compartit",
+      "confirm_delete": "Confirmar eliminació",
+      "deleting": "Eliminant...",
+      "delete_warning": "S'eliminarà l'accés del destinatari i ja no podrà signar aquest document.",
+      "delete_keyword": "eliminar",
+      "type_delete_instruction": "Escriu \"{keyword}\" per confirmar.",
+      "delete_not_allowed": "No pots eliminar el document perquè el destinatari ja ha fet una acció."
+    },
+    "messages": {
+      "not_signed": "Encara no signat",
+      "unknown_recipient": "Sense destinatari final",
+      "empty": "Encara no has enviat cap document.",
+      "load_error": "No s'han pogut carregar els documents enviats.",
+      "retry": "Torna-ho a provar",
+      "detail_prefetch_failed": "No s'ha pogut carregar el detall del document.",
+      "popup_blocked": "Bloquejador de finestres emergents activat. Permet les finestres emergents per a aquest lloc.",
+      "open_document_error": "No s'ha pogut obrir el document en una pestanya nova.",
+      "reminder_sent": "Recordatori enviat correctament.",
+      "reminder_error": "No s'ha pogut enviar el recordatori.",
+      "document_deleted_shared": "Accés compartit eliminat correctament.",
+      "delete_error": "No s'ha pogut eliminar l'accés compartit."
+    }
+  },
+  "received_documents": {
+    "metrics": {
+      "total_received": "Total rebuts",
+      "pending_my_signature": "Pendents de la meua firma",
+      "signed_by_me": "Signats per mi",
+      "rejected_or_revoked": "Rebutjats o revocats"
+    },
+    "list": {
+      "title": "Documents rebuts"
+    },
+    "fields": {
+      "size": "Pes",
+      "received_at": "Rebut",
+      "signed_at": "Signat",
+      "expires": "Caduca",
+      "sender": "Remitent",
+      "status": "Estat"
+    },
+    "status": {
+      "pending": "Pendent",
+      "signed": "Signat",
+      "rejected": "Rebutjat",
+      "revoked": "Revocat",
+      "blocked": "Bloquejat"
+    },
+    "modal": {
+      "title": "Detall del document",
+      "close": "Tanca",
+      "view_document": "Veure document",
+      "opening_document": "Obrint...",
+      "sender_deleted": "L'usuari que ha enviat este document ja no existeix. Pots continuar veient el document, però les accions de signatura ja no estan disponibles."
+    },
+    "unlock": {
+      "title": "Document bloquejat",
+      "description": "Aquest document està protegit. Resol tots els bloquejos per accedir-hi.",
+      "step_label": "Pas {current} de {total}",
+      "lock_password": "Bloqueig per contrasenya",
+      "password_placeholder": "Introdueix la contrasenya del document",
+      "unlock_button": "Desbloquejar",
+      "unlocking": "Desbloquejant\u2026",
+      "unlock_success": "Document desbloquejat correctament",
+      "wrong_password": "Contrasenya incorrecta. Torna-ho a provar.",
+      "unlock_error": "No s'ha pogut desbloquejar el document. Torna-ho a provar.",
+      "checking_locks": "Comprovant bloquejos\u2026",
+      "locked_summary_single": "1 bloqueig per resoldre",
+      "locked_summary_multi": "{count} bloquejos per resoldre"
+    },
+    "document_actions": {
+      "sign": "Signar",
+      "reject": "Rebutjar",
+      "revoke": "Revocar",
+      "signing": "Signant\u2026",
+      "rejecting": "Rebutjant\u2026",
+      "revoking": "Revocant\u2026",
+      "download": "Descarregar",
+      "back": "Tornar",
+      "close_preview": "Tancar vista prèvia",
+      "document_info": "Informació del document",
+      "name": "Nom",
+      "sender": "Remitent",
+      "size": "Pes",
+      "status": "Estat",
+      "preview_unavailable": "Vista prèvia no disponible",
+      "preview_title": "Vista prèvia del document",
+      "preview_error": "No s'ha pogut carregar la vista prèvia",
+      "processing": "Processant\u2026"
+    },
+    "otp": {
+      "title": "Verifica la teua identitat",
+      "description": "Hem enviat un codi de verificació a <b>{destination}</b>",
+      "code_label": "Codi de verificació",
+      "code_placeholder": "Introdueix el codi de 6 dígits",
+      "code_required": "El codi de verificació és obligatori",
+      "code_invalid": "Format de codi invàlid",
+      "verify_button": "Verificar",
+      "verifying": "Verificant\u2026",
+      "resend_button": "Reenviar codi",
+      "resending": "Reenviant\u2026",
+      "resend_available_in": "Reenviament disponible en {seconds}s",
+      "verified_success": "Identitat verificada correctament",
+      "verify_error": "No s'ha pogut verificar el codi. Torna-ho a provar.",
+      "expired_error": "El codi ha caducat. Demana'n un de nou.",
+      "wrong_code": "Codi incorrecte. {remaining} intents restants.",
+      "too_many_attempts": "Massa intents incorrectes. Torna-ho a provar més tard.",
+      "action_success_sign": "Document signat correctament",
+      "action_success_reject": "Document rebutjat correctament",
+      "action_success_revoke": "Signatura revocada correctament",
+      "cancel_button": "Cancel·lar"
+    },
+    "messages": {
+      "not_signed": "Encara no signat",
+      "empty": "Encara no has rebut documents.",
+      "load_error": "No s'han pogut carregar els documents rebuts.",
+      "retry": "Torna-ho a provar",
+      "detail_prefetch_failed": "No s'ha pogut carregar el detall del document.",
+      "open_document_error": "No s'ha pogut obrir el document en una pestanya nova.",
+      "signed_before_expiry": "Signat abans de la caducitat.",
+      "expires_on": "Caduca el",
+      "mock_preview_unavailable": "Vista prèvia no disponible en mode demo",
+      "resolve_locks_first": "Has de resoldre tots els bloquejos abans d'obrir aquest fitxer."
+    }
+  },
+  "public_page": {
+    "auth_required": "Autenticació requerida. Si us plau, inicia sessió.",
+    "invalid_link": "Enllaç públic invàlid o caducat.",
+    "session_invalid": "La sessió pública és invàlida o ha caducat.",
+    "load_error": "No s'ha pogut carregar el document compartit.",
+    "wrong_password": "Contrasenya incorrecta. Torna-ho a provar.",
+    "resolve_locks_error": "No s'han pogut resoldre tots els bloquejos.",
+    "start_flow_error": "No s'ha pogut iniciar el flux de verificació.",
+    "code_expired": "Codi caducat. Demana un codi nou.",
+    "wrong_code": "Codi incorrecte. Torna-ho a provar.",
+    "verify_error": "No s'ha pogut verificar el codi.",
+    "resend_error": "No s'ha pogut reenviar el codi.",
+    "unlocked_success": "Document desbloquejat correctament.",
+    "action_completed": "Acció completada correctament.",
+    "unresolved_locks": "Aquest document té {count} bloqueig(s) sense resoldre.",
+    "document_password": "Contrasenya del document",
+    "unlock": "Desbloquejar",
+    "unlocking": "Desbloquejant\u2026",
+    "download": "Descarregar",
+    "reject": "Rebutjar",
+    "sign": "Signar",
+    "revoke": "Revocar",
+    "end_session": "Finalitzar sessió",
+    "sender_label": "Remitent",
+    "file_label": "Fitxer"
+  },
+  "settings": {
+    "sidebar": {
+      "title": "En aquesta pàgina"
+    },
+    "sections": {
+      "user": "Usuari",
+      "platform": "Plataforma",
+      "docs": "Documents Legals",
+      "cookies": "Cookies i Polítiques",
+      "danger-zone": "Zona de Perill"
+    },
+    "platform": {
+      "appearance": "Aparença",
+      "preferences": "Preferències",
+      "language": "Idioma",
+      "theme": "Tema",
+      "notifications": "Notificacions",
+      "reduced_motion": "Moviment reduït",
+      "language_aria": "Seleccionar idioma",
+      "theme_aria": "Alternar tema",
+      "notifications_aria": "Alternar notificacions",
+      "reduced_motion_aria": "Alternar moviment reduït",
+      "notifications_tooltip": "Notificacions dins de l'app — no són notificacions push",
+      "reduced_motion_tooltip": "Redueix les animacions i efectes de moviment per a més comoditat"
+    },
+    "dangerZone": {
+      "title": "Zona de Perill",
+      "description": "Elimina permanentment el teu compte i totes les dades associades",
+      "deleteButton": "Eliminar compte",
+      "confirmTitle": "Estàs segur?",
+      "confirmDescription": "Aquesta acció és irreversible. Escriu \"confirmar\" per continuar",
+      "confirmPlaceholder": "confirmar",
+      "confirmButton": "Eliminar compte definitivament",
+      "successSnackbar": "Compte eliminat correctament",
+      "errorSnackbar": "Error en eliminar el compte",
+      "legalLinkLabel": "Política de Retenció de Documents",
+      "legalDescription": "Consulta la nostra política de retenció i eliminació de dades per a més informació sobre com es gestionen les teves dades després de l'eliminació del compte."
+    }
+  },
+  "legal": {
+    "titles": {
+      "legal-notice": "Avís Legal",
+      "privacy-policy": "Política de Privacitat",
+      "cookie-policy": "Política de Cookies",
+      "terms-and-conditions": "Termes i Condicions",
+      "electronic-signature-policy": "Política de Signatura Electrònica",
+      "data-processing-agreement": "Acord de Processament de Dades (DPA)",
+      "document-retention-policy": "Política de Retenció de Documents"
+    },
+    "page": {
+      "title": "Documents Legals",
+      "not_found": "Document no trobat"
+    }
+  },
+  "topbar": {
+    "breadcrumbs": {
+      "home": "Inici",
+      "documents": "Documents",
+      "sent": "Enviats",
+      "received": "Rebut",
+      "new_document": "Nou Document",
+      "history": "Historial",
+      "contacts": "Contactes",
+      "security": "Seguretat",
+      "settings": "Configuració",
+      "profile": "Perfil"
+    },
+    "titles": {
+      "dashboard": "Panell de control",
+      "documents": "Documents",
+      "sent": "Enviats",
+      "received": "Rebut",
+      "new_document": "Nou Document",
+      "history": "Historial",
+      "contacts": "Contactes",
+      "security": "Seguretat",
+      "settings": "Configuració",
+      "profile": "El meu Perfil"
+    },
+    "pro_account": "Compte Pro",
+    "notifications": {
+      "coming_soon": "Notificacions properament",
+      "unavailable_aria": "Notificacions no disponibles"
+    }
+  },
+  "errors": {
+    "generic": "Error inesperat. Torna-ho a provar.",
+    "credentials": "Credencials incorrectes. Comprova el teu correu i contrasenya.",
+    "timeout": "La sol·licitud ha trigat massa. Comprova la teva connexió.",
+    "server": "Error del servidor. Torna-ho a provar més tard.",
+    "session_expired": "Sessió caducada"
+  },
+  "dates": {
+    "minutes_ago": "fa {minutes} min",
+    "hours_ago": "fa {hours}h",
+    "yesterday": "ahir",
+    "days_ago": "fa {days} dies",
+    "weeks_ago": "fa {weeks} set"
+  },
+  "greeting": {
+    "morning": "Bon dia",
+    "afternoon": "Bona tarda",
+    "evening": "Bona nit"
+  },
+  "profile": {
+    "title": "El meu Perfil",
+    "personal_info": "Informació Personal",
+    "contact_info": "Informació de Contacte",
+    "account_info": "Informació del Compte",
+    "first_name": "Nom",
+    "last_name": "Cognoms",
+    "country": "País",
+    "national_id": "DNI / NIF",
+    "passport": "Passaport",
+    "email": "Correu electrònic",
+    "phone": "Telèfon",
+    "patient_id": "ID de Pacient",
+    "member_since": "Membre des de",
+    "last_updated": "Última actualització",
+    "edit": "Editar",
+    "edit_personal_data": "Editar dades personals",
+    "save": "Guardar canvis",
+    "saving": "Guardant…",
+    "cancel": "Cancel·lar",
+    "unsaved_changes_title": "Canvis sense guardar",
+    "unsaved_changes_message": "Tens canvis sense guardar. Vols descartar-los?",
+    "discard": "Descartar",
+    "keep_editing": "Seguir editant",
+    "verify_title": "Verifica la teva identitat",
+    "verify_description": "Introdueix la teva contrasenya actual per actualitzar el teu {field}",
+    "verify_password_label": "Contrasenya actual",
+    "verify_password_required": "La contrasenya és obligatòria",
+    "verify_button": "Verificar",
+    "verifying": "Verificant…",
+    "verify_error": "Contrasenya incorrecta. Torna-ho a provar.",
+    "wrong_password": "Contrasenya incorrecta. Verifica la teva contrasenya i torna-ho a provar.",
+    "update_success": "Perfil actualitzat correctament",
+    "update_error": "Error en actualitzar el perfil",
+    "not_available": "No proporcionat",
+    "modal": {
+      "close_aria": "Tancar"
+    },
+    "edit_info": "Editar informació",
+    "logout": "Tancar sessió"
+  },
+  "upload": {
+    "idle": "Arrossega un fitxer aquí o fes clic per seleccionar",
+    "dragover": "Deixa anar el fitxer aquí",
+    "selected": "Seleccionat: {fileName} ({fileSize})",
+    "uploading": "Pujant…",
+    "error_type": "Tipus de fitxer no compatible",
+    "error_size": "El fitxer supera la mida màxima de 150 MB",
+    "error_empty": "El fitxer està buit",
+    "browse": "Seleccionar fitxers"
+  },
+  "send_wizard": {
+    "step_label": "Enviar document — Pas {step} de {total}",
+    "cancel": "Cancel·lar",
+    "back": "Enrere",
+    "next": "Següent",
+    "upload_fail": "Error en pujar el fitxer",
+    "metadata_title": "Metadades del document",
+    "metadata_title_label": "Títol",
+    "metadata_description_label": "Descripció",
+    "metadata_save": "Guardar",
+    "metadata_saving": "Guardant…",
+    "metadata_title_required": "El títol és obligatori",
+    "metadata_save_fail": "Error en guardar les metadades",
+    "recipients_title": "Afegir destinataris",
+    "search_placeholder": "Cercar contactes o usuaris…",
+    "search_no_options": "No s'han trobat contactes o usuaris",
+    "search_loading": "Cercant…",
+    "search_clear": "Netejar",
+    "search_close": "Tancar",
+    "search_open": "Obrir",
+    "search_contact_label": "Contacte",
+    "search_user_label": "Usuari",
+    "recipients_empty": "No hi ha destinataris afegits. Utilitza la cerca per afegir destinataris.",
+    "recipients_duplicate": "Aquest destinatari ja s'ha afegit",
+    "recipient_type_manual": "Manual",
+    "recipient_save_as_contact": "Guardar com a contacte",
+    "recipient_remove": "Treure {email}",
+    "confirm_title": "Confirmar i enviar",
+    "confirm_document_label": "Document",
+    "confirm_recipients_single": "{count} destinatari",
+    "confirm_recipients_multi": "{count} destinataris",
+    "confirm_send": "Enviar",
+    "confirm_sending": "Enviant…",
+    "confirm_send_fail": "Error en enviar el document",
+    "send_success": "Document enviat correctament"
+  },
+  "contacts": {
+    "page_title": "Contactes",
+    "search_placeholder": "Cercar contactes...",
+    "search_clear": "Netejar cerca",
+    "searching": "Cercant...",
+    "no_results": "Cap contacte coincideix amb la cerca.",
+    "cancel": "Cancel·lar",
+    "add_contact": "Afegir contacte",
+    "add_contact_title": "Afegir contacte",
+    "add_contact_subtitle": "Cerca un usuari registrat per afegir com a contacte",
+    "search_users_label": "Cercar usuaris",
+    "no_users_found": "No s'han trobat usuaris",
+    "contact_added": "Contacte afegit correctament",
+    "contact_exists": "El contacte ja existeix",
+    "contact_add_error": "Error en afegir el contacte",
+    "load_error": "Error en carregar els contactes",
+    "retry": "Torna-ho a provar",
+    "empty": "Encara no tens contactes. Guarda destinataris des del flux d'enviament.",
+    "delete_success": "Contacte eliminat",
+    "delete_fail": "Error en eliminar el contacte",
+    "delete_aria_label": "Eliminar {email}"
+  },
+  "history": {
+    "title": "Historial",
+    "empty": {
+      "title": "Sense documents encara",
+      "description": "L'activitat de documents enviats i rebuts apareixerà aquí."
+    },
+    "error": {
+      "title": "Error en carregar l'historial",
+      "retry": "Tornar a provar"
+    },
+    "events": {
+      "sent": "Enviat a {name}",
+      "received": "Rebut de {name}",
+      "signed": "Signat per {name}",
+      "signedByYou": "Signat per tu",
+      "rejected": "Rebutjat per {name}",
+      "rejectedByYou": "Rebutjat per tu",
+      "revoked": "Revocat per {name}",
+      "revokedByYou": "Revocat per tu"
+    }
+  },
+  "signer_consent": {
+    "title_sign": "Signaràs aquest document",
+    "title_reject": "Rebutaràs aquest document",
+    "title_revoke": "Revocaràs aquest document",
+    "body_sign_p1": "Estàs a punt de signar electrònicament \"{documentName}\". Aquesta acció té validesa legal i no es podrà desfer un cop completada.",
+    "body_sign_p2": "En confirmar, es registrarà la teva adreça IP, el dispositiu utilitzat i l'hora exacta de l'operació, i hauràs de verificar la teva identitat mitjançant un codi que enviarem al teu correu electrònic. Tota aquesta informació queda associada a la teva signatura com a evidència, d'acord amb la nostra <policy>Política de Signatura Electrònica</policy>.",
+    "body_reject_p1": "Estàs a punt de rebutjar \"{documentName}\". Aquesta acció té validesa legal i no es podrà desfer un cop completada.",
+    "body_reject_p2": "En confirmar, es registrarà la teva adreça IP, el dispositiu utilitzat i l'hora exacta de l'operació, i hauràs de verificar la teva identitat mitjançant un codi que enviarem al teu correu electrònic. Tota aquesta informació queda associada a aquesta acció com a evidència, d'acord amb la nostra <policy>Política de Signatura Electrònica</policy>.",
+    "body_revoke_p1": "Estàs a punt de revocar \"{documentName}\". Aquesta acció té validesa legal i no es podrà desfer un cop completada.",
+    "body_revoke_p2": "En confirmar, es registrarà la teva adreça IP, el dispositiu utilitzat i l'hora exacta de l'operació, i hauràs de verificar la teva identitat mitjançant un codi que enviarem al teu correu electrònic. Tota aquesta informació queda associada a aquesta acció com a evidència, d'acord amb la nostra <policy>Política de Signatura Electrònica</policy>.",
+    "body_review": "Abans de continuar, assegura't d'haver revisat el contingut complet del document.",
+    "checkbox_label": "He llegit el document i entenc que en confirmar l'estic signant electrònicament amb validesa legal.",
+    "cancel": "Cancel·lar",
+    "confirm": "Confirmar i continuar",
+    "policy_link": "Política de Signatura Electrònica"
+  }
+}

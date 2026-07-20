@@ -1,0 +1,66 @@
+name: CI Promotion Pull Request
+
+# Runs on PRs promoting code into uat or main: re-validates the change
+# end-to-end (lint, format, typecheck, unit tests, build, e2e) before it
+# reaches a higher environment.
+on:
+  pull_request:
+    branches:
+      - uat
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  promotion-validation:
+    name: Validate promotion PR
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      # Fails the build on known high-or-above severity vulnerabilities in dependencies.
+      - name: Audit dependencies
+        run: npm audit --audit-level=high
+
+      - name: Run linter
+        run: npm run lint
+
+      - name: Check formatting
+        run: npm run format:check
+
+      - name: Type check
+        run: npm run typecheck
+
+      - name: Run unit tests
+        run: npm run test
+
+      - name: Build application
+        run: npm run build
+
+      # Caches installed browser binaries across runs, keyed on the lockfile,
+      # so Playwright only re-downloads Chromium when dependencies change.
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+
+      - name: Install Playwright browsers
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: npx playwright install --with-deps chromium
+
+      - name: Run e2e tests
+        run: npm run test:e2e
+

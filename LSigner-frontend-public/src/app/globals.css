@@ -1,0 +1,151 @@
+@import 'tailwindcss';
+
+/* ============================================================
+   RAW PALETTE : Tailwind v4 @theme
+   It generates utilities: bg-primary-700, text-accent-500, etc.
+   ============================================================ */
+@theme {
+  --font-sans:
+    var(--font-mplusu), 'DM Sans', 'Nunito', 'Segoe UI', system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono);
+
+  /* Primary : navy / brand */
+  --color-primary-brand: #03045e; /* navyBrand : main in light */
+  --color-primary-muted: #e5e5ef; /* navyMuted : icon bg light */
+  --color-primary-deep: #151a35; /* navyDeep  : breadcrumb current */
+  --color-primary-gray: #60647a; /* navyGray  : breadcrumb inactive */
+  --color-primary-dark: #02033a; /* navyBrand darkened */
+  --color-cream-white: #f9fafb; /* main in dark mode */
+  --color-icon-bg-dark: #242a39; /* icon bg in dark */
+
+  /* Secondary : amber */
+  --color-secondary-400: #fbbf24;
+  --color-secondary-500: #f59e0b;
+  --color-secondary-600: #d97706;
+  --color-secondary-700: #b45309;
+
+  /* Grayscale */
+  --color-gray-0: #ffffff;
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
+
+  /* Dark surfaces */
+  --color-surface-dark-0: #070e1d;
+  --color-surface-dark-1: #0c1322;
+  --color-surface-dark-2: #1e293b;
+  --color-surface-dark-3: #334155;
+
+  /* Status */
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-info: #3b82f6;
+}
+
+/* ============================================================
+   DARK MODE : defaults to dark, can be toggled with [data-theme="light"]
+   ============================================================ */
+[data-theme='dark'] {
+  --bg-base: #070e1d;
+  --bg-surface: #0c1322;
+  --bg-elevated: #1e293b;
+  --bg-subtle: #334155;
+
+  --text-primary: #f9fafb;
+  --text-secondary: #9ca3af;
+  --text-disabled: #4b5563;
+  --text-inverse: #151a35;
+
+  --border-default: #1e293b;
+  --border-subtle: #0c1322;
+  --border-strong: #f9fafb;
+
+  --brand-primary: #f9fafb;
+  --brand-hover: #e5e7eb;
+
+  --cta-bg: #fbbf24;
+  --cta-bg-hover: #f59e0b;
+  --cta-text: #151a35;
+
+  --input-bg: #0c1322;
+  --input-border: #1e293b;
+  --input-focus: #f9fafb;
+  --input-text: #f9fafb;
+  --input-placeholder: #9ca3af;
+}
+
+/* ============================================================
+   LIGHT MODE
+   ============================================================ */
+[data-theme='light'] {
+  --bg-base: #f9f9f9;
+  --bg-surface: #ffffff;
+  --bg-elevated: #f3f3f3;
+  --bg-subtle: #e5e7eb;
+
+  --text-primary: #151a35;
+  --text-secondary: #5a6175;
+  --text-disabled: #9ca3af;
+  --text-inverse: #f9fafb;
+
+  --border-default: #e5e7eb;
+  --border-subtle: #f3f3f3;
+  --border-strong: #03045e;
+
+  --brand-primary: #03045e;
+  --brand-hover: #02033a;
+
+  --cta-bg: #f59e0b;
+  --cta-bg-hover: #d97706;
+  --cta-text: #ffffff;
+
+  --input-bg: #ffffff;
+  --input-border: #e5e7eb;
+  --input-focus: #03045e;
+  --input-text: #151a35;
+  --input-placeholder: #9ca3af;
+}
+
+/* ============================================================
+   TEXT SELECTION
+   ============================================================ */
+[data-theme='light'] ::selection {
+  background-color: rgba(3, 4, 94, 0.15);
+  color: #03045e;
+}
+
+[data-theme='dark'] ::selection {
+  background-color: rgba(249, 250, 251, 0.18);
+  color: #f9fafb;
+}
+
+/* ============================================================
+   BASE STYLES
+   ============================================================ */
+html {
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+}
+
+body {
+  font-family: var(--font-sans, Arial, sans-serif);
+  min-height: 100vh;
+}
+
+/* ============================================================
+   REDUCED MOTION : applies when [data-reduce-motion] is set on <html>
+   ============================================================ */
+[data-reduce-motion] *,
+[data-reduce-motion] *::before,
+[data-reduce-motion] *::after {
+  animation-duration: 0s !important;
+  transition-duration: 0s !important;
+}

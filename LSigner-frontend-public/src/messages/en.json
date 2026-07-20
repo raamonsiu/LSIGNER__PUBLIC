@@ -1,0 +1,581 @@
+{
+  "common": {
+    "brand": {
+      "title": "LSigner",
+      "subtitle": "Electronic Signature Provider",
+      "tagline": "Trusted workspace"
+    },
+    "theme": {
+      "light": "Light mode",
+      "dark": "Dark mode"
+    },
+    "language": {
+      "en": "English",
+      "es": "Español",
+      "ca": "Català"
+    },
+    "google_placeholder": {
+      "login": "Coming soon — Google sign in",
+      "register": "Coming soon — Google registration"
+    },
+    "coming_soon": "Coming soon"
+  },
+  "nav": {
+    "home": "Home",
+    "sent": "Sent",
+    "received": "Received",
+    "history": "History",
+    "contacts": "Contacts",
+    "security": "Security",
+    "settings": "Settings",
+    "new_document": "New Document"
+  },
+  "login": {
+    "page": {
+      "title": "Sign in",
+      "subtitle": "Access your secure document space"
+    },
+    "form": {
+      "email_label": "Email",
+      "email_required": "Email is required",
+      "email_invalid": "Enter a valid email",
+      "password_label": "Password",
+      "password_required": "Password is required",
+      "show_password": "Show password",
+      "hide_password": "Hide password",
+      "forgot_password": "Forgot your password?",
+      "submit": "Sign in",
+      "submitting": "Signing in\u2026"
+    },
+    "divider": "Or",
+    "google": "Continue with Google",
+    "register_link": "Don't have an account?",
+    "register_link_action": "Sign up",
+    "expired_session": "Your session has expired. Please sign in again."
+  },
+  "register": {
+    "page": {
+      "title": "Create account",
+      "subtitle": "Complete the details to register"
+    },
+    "form": {
+      "name_label": "First name",
+      "name_required": "First name is required",
+      "last_name_label": "Last name",
+      "last_name_required": "Last name is required",
+      "email_label": "Email",
+      "email_required": "Email is required",
+      "email_invalid": "Enter a valid email",
+      "country_label": "Country",
+      "country_required": "Country is required",
+      "phone_label": "Phone",
+      "phone_required": "Phone is required",
+      "phone_placeholder": "E.164 format, e.g. +34600000000",
+      "phone_invalid": "E.164 format required (e.g. +34600000000)",
+      "national_id_label": "DNI / NIF (optional)",
+      "passport_label": "Passport (optional)",
+      "password_label": "Password",
+      "password_required": "Password is required",
+      "password_min_length": "Minimum 8 characters",
+      "password_too_short": "Password must be at least 8 characters",
+      "confirm_password_label": "Confirm password",
+      "passwords_mismatch": "Passwords do not match",
+      "show_password": "Show password",
+      "hide_password": "Hide password",
+      "submit": "Create account",
+      "submitting": "Creating account\u2026"
+    },
+    "divider": "Or",
+    "google": "Continue with Google",
+    "login_link": "Already have an account?",
+    "login_link_action": "Sign in",
+    "legal": "By creating an account, you agree to the",
+    "legal_terms": "Terms of Service",
+    "legal_connector": "and the",
+    "legal_privacy": "Privacy Policy",
+    "success_message": "Account created successfully. Sign in."
+  },
+  "dashboard": {
+    "metrics": {
+      "pending_signature": "Pending your signature",
+      "view_all": "View all",
+      "waiting_for_others": "Waiting for others",
+      "view_status": "View status"
+    },
+    "security": {
+      "badge": "SECURE",
+      "title": "Account Security",
+      "description": "Optimal security status. Biometrics and 2FA enabled.",
+      "strength": "Strength"
+    },
+    "upload": {
+      "title": "Upload Document",
+      "drag_hint": "Drag a PDF or Word file",
+      "select": "Select a document",
+      "compatibility": "Compatible with .pdf, .docx, .txt \u00b7 Max. 150 MB",
+      "button": "Upload document"
+    },
+    "recent_documents": "Recent Documents",
+    "recent_sent_label": "Sent",
+    "recent_received_label": "Received",
+    "messages": {
+      "load_error": "Dashboard data could not be loaded.",
+      "retry": "Retry",
+      "empty": "No recent documents"
+    },
+    "status": {
+      "draft": "Draft",
+      "voided": "Voided",
+      "replaced": "Replaced",
+      "waiting": "Waiting",
+      "completed": "Completed"
+    }
+  },
+  "sent_documents": {
+    "metrics": {
+      "total_sent": "Total sent",
+      "pending_final_signature": "Pending final signature",
+      "unique_recipients": "Unique recipients",
+      "completed": "Completed",
+      "total": "Total recipients",
+      "pending": "Pending",
+      "signed": "Signed",
+      "rejected": "Rejected",
+      "revoked": "Revoked"
+    },
+    "list": {
+      "title": "Sent documents",
+      "subtitle": "One row per recipient — see who signed and who is still pending."
+    },
+    "fields": {
+      "size": "Size",
+      "sent_at": "Sent",
+      "signed_at": "Signed",
+      "recipient": "Recipient",
+      "recipient_email": "Recipient email",
+      "document": "Document",
+      "status": "Status"
+    },
+    "status": {
+      "draft": "Draft",
+      "waiting": "Waiting",
+      "completed": "Completed",
+      "voided": "Voided",
+      "superseded": "Superseded",
+      "deleted": "Deleted"
+    },
+    "recipient_status": {
+      "pending": "Pending",
+      "signed": "Signed",
+      "rejected": "Rejected",
+      "revoked": "Revoked"
+    },
+    "modal": {
+      "title": "Document details",
+      "close": "Close",
+      "view_document": "View document",
+      "opening_document": "Opening...",
+      "send_reminder": "Send reminder",
+      "sending_reminder": "Sending...",
+      "delete_document": "Delete shared access",
+      "confirm_delete": "Confirm delete",
+      "deleting": "Deleting...",
+      "delete_warning": "Recipient access will be removed and they will no longer be able to sign this document.",
+      "delete_keyword": "remove",
+      "type_delete_instruction": "Type \"{keyword}\" to confirm.",
+      "delete_not_allowed": "You cannot delete shared access because the recipient has already taken an action."
+    },
+    "messages": {
+      "not_signed": "Not signed yet",
+      "unknown_recipient": "No final recipient",
+      "empty": "You have not sent any documents yet.",
+      "load_error": "Sent documents could not be loaded.",
+      "retry": "Retry",
+      "detail_prefetch_failed": "Document details could not be loaded.",
+      "popup_blocked": "Popup blocked. Please allow popups for this site.",
+      "open_document_error": "Document could not be opened in a new tab.",
+      "reminder_sent": "Reminder sent successfully.",
+      "reminder_error": "Reminder could not be sent.",
+      "document_deleted_shared": "Shared access removed successfully.",
+      "delete_error": "Shared access could not be removed."
+    }
+  },
+  "received_documents": {
+    "metrics": {
+      "total_received": "Total received",
+      "pending_my_signature": "Pending my signature",
+      "signed_by_me": "Signed by me",
+      "rejected_or_revoked": "Rejected or revoked"
+    },
+    "list": {
+      "title": "Received documents"
+    },
+    "fields": {
+      "size": "Size",
+      "received_at": "Received",
+      "signed_at": "Signed",
+      "expires": "Expires",
+      "sender": "Sender",
+      "status": "Status"
+    },
+    "status": {
+      "pending": "Pending",
+      "signed": "Signed",
+      "rejected": "Rejected",
+      "revoked": "Revoked",
+      "blocked": "Blocked"
+    },
+    "modal": {
+      "title": "Document details",
+      "close": "Close",
+      "view_document": "View document",
+      "opening_document": "Opening...",
+      "sender_deleted": "The user who sent this document no longer exists. You can still view the document, but signing actions are no longer available."
+    },
+    "unlock": {
+      "title": "Blocked document",
+      "description": "This document is protected. Resolve all locks to access it.",
+      "step_label": "Step {current} of {total}",
+      "lock_password": "Password lock",
+      "password_placeholder": "Enter document password",
+      "unlock_button": "Unlock",
+      "unlocking": "Unlocking\u2026",
+      "unlock_success": "Document unlocked successfully",
+      "wrong_password": "Incorrect password. Try again.",
+      "unlock_error": "Could not unlock the document. Try again.",
+      "checking_locks": "Checking locks\u2026",
+      "locked_summary_single": "1 lock to resolve",
+      "locked_summary_multi": "{count} locks to resolve"
+    },
+    "document_actions": {
+      "sign": "Sign",
+      "reject": "Reject",
+      "revoke": "Revoke",
+      "signing": "Signing\u2026",
+      "rejecting": "Rejecting\u2026",
+      "revoking": "Revoking\u2026",
+      "download": "Download",
+      "back": "Back",
+      "close_preview": "Close preview",
+      "document_info": "Document info",
+      "name": "Name",
+      "sender": "Sender",
+      "size": "Size",
+      "status": "Status",
+      "preview_unavailable": "Preview unavailable",
+      "preview_title": "Document preview",
+      "preview_error": "Could not load document preview",
+      "processing": "Processing\u2026"
+    },
+    "otp": {
+      "title": "Verify your identity",
+      "description": "We sent a verification code to <b>{destination}</b>",
+      "code_label": "Verification code",
+      "code_placeholder": "Enter the 6-digit code",
+      "code_required": "Verification code is required",
+      "code_invalid": "Invalid code format",
+      "verify_button": "Verify",
+      "verifying": "Verifying\u2026",
+      "resend_button": "Resend code",
+      "resending": "Resending\u2026",
+      "resend_available_in": "Resend available in {seconds}s",
+      "verified_success": "Identity verified successfully",
+      "verify_error": "Could not verify the code. Try again.",
+      "expired_error": "The code has expired. Request a new one.",
+      "wrong_code": "Incorrect code. {remaining} attempts remaining.",
+      "too_many_attempts": "Too many incorrect attempts. Try again later.",
+      "action_success_sign": "Document signed successfully",
+      "action_success_reject": "Document rejected successfully",
+      "action_success_revoke": "Signature revoked successfully",
+      "cancel_button": "Cancel"
+    },
+    "messages": {
+      "not_signed": "Not signed yet",
+      "empty": "You have not received any documents yet.",
+      "load_error": "Received documents could not be loaded.",
+      "retry": "Retry",
+      "detail_prefetch_failed": "Document details could not be loaded.",
+      "open_document_error": "Document could not be opened in a new tab.",
+      "signed_before_expiry": "Signed before expiry.",
+      "expires_on": "Expires on",
+      "mock_preview_unavailable": "Preview unavailable in demo mode",
+      "resolve_locks_first": "You must resolve all document locks before opening this file."
+    }
+  },
+  "public_page": {
+    "auth_required": "Authentication required. Please sign in.",
+    "invalid_link": "Invalid or expired public link.",
+    "session_invalid": "Public session is invalid or expired.",
+    "load_error": "Could not load shared document.",
+    "wrong_password": "Incorrect password. Try again.",
+    "resolve_locks_error": "Could not resolve all locks.",
+    "start_flow_error": "Could not start verification flow.",
+    "code_expired": "Code expired. Request a new code.",
+    "wrong_code": "Wrong code. Try again.",
+    "verify_error": "Could not verify code.",
+    "resend_error": "Could not resend code.",
+    "unlocked_success": "Document unlocked successfully.",
+    "action_completed": "Action completed successfully.",
+    "unresolved_locks": "This document has {count} unresolved lock(s).",
+    "document_password": "Document password",
+    "unlock": "Unlock",
+    "unlocking": "Unlocking\u2026",
+    "download": "Download",
+    "reject": "Reject",
+    "sign": "Sign",
+    "revoke": "Revoke",
+    "end_session": "End session",
+    "sender_label": "Sender",
+    "file_label": "File"
+  },
+  "settings": {
+    "sidebar": {
+      "title": "On this page"
+    },
+    "sections": {
+      "user": "User",
+      "platform": "Platform",
+      "docs": "Legal Documents",
+      "cookies": "Cookies & Policies",
+      "danger-zone": "Danger Zone"
+    },
+    "platform": {
+      "appearance": "Appearance",
+      "preferences": "Preferences",
+      "language": "Language",
+      "theme": "Theme",
+      "notifications": "Notifications",
+      "reduced_motion": "Reduced motion",
+      "language_aria": "Select language",
+      "theme_aria": "Toggle theme",
+      "notifications_aria": "Toggle notifications",
+      "reduced_motion_aria": "Toggle reduced motion",
+      "notifications_tooltip": "In-app notifications only — not push notifications",
+      "reduced_motion_tooltip": "Reduces animations and motion effects for increased comfort"
+    },
+    "dangerZone": {
+      "title": "Danger Zone",
+      "description": "Permanently delete your account and all associated data",
+      "deleteButton": "Delete Account",
+      "confirmTitle": "Are you sure?",
+      "confirmDescription": "This action is irreversible. Type \"confirmar\" to proceed",
+      "confirmPlaceholder": "confirmar",
+      "confirmButton": "Delete permanently",
+      "successSnackbar": "Account deleted successfully",
+      "errorSnackbar": "Error deleting account",
+      "legalLinkLabel": "Document Retention Policy",
+      "legalDescription": "View our data retention and deletion policy for details on how your data is handled after account deletion."
+    }
+  },
+  "legal": {
+    "titles": {
+      "legal-notice": "Legal Notice",
+      "privacy-policy": "Privacy Policy",
+      "cookie-policy": "Cookie Policy",
+      "terms-and-conditions": "Terms and Conditions",
+      "electronic-signature-policy": "Electronic Signature Policy",
+      "data-processing-agreement": "Data Processing Agreement (DPA)",
+      "document-retention-policy": "Document Retention Policy"
+    },
+    "page": {
+      "title": "Legal Documents",
+      "not_found": "Document not found"
+    }
+  },
+  "topbar": {
+    "breadcrumbs": {
+      "home": "Home",
+      "documents": "Documents",
+      "sent": "Sent",
+      "received": "Received",
+      "new_document": "New Document",
+      "history": "History",
+      "contacts": "Contacts",
+      "security": "Security",
+      "settings": "Settings",
+      "profile": "Profile"
+    },
+    "titles": {
+      "dashboard": "Dashboard",
+      "documents": "Documents",
+      "sent": "Sent",
+      "received": "Received",
+      "new_document": "New Document",
+      "history": "History",
+      "contacts": "Contacts",
+      "security": "Security",
+      "settings": "Settings",
+      "profile": "My Profile"
+    },
+    "pro_account": "Pro Account",
+    "notifications": {
+      "coming_soon": "Notifications coming soon",
+      "unavailable_aria": "Notifications unavailable"
+    }
+  },
+  "errors": {
+    "generic": "Unexpected error. Try again.",
+    "credentials": "Incorrect credentials. Check your email and password.",
+    "timeout": "The request took too long. Check your connection.",
+    "server": "Server error. Try again later.",
+    "session_expired": "Session expired"
+  },
+  "dates": {
+    "minutes_ago": "{minutes} min ago",
+    "hours_ago": "{hours}h ago",
+    "yesterday": "yesterday",
+    "days_ago": "{days} days ago",
+    "weeks_ago": "{weeks} wk ago"
+  },
+  "greeting": {
+    "morning": "Good morning",
+    "afternoon": "Good afternoon",
+    "evening": "Good evening"
+  },
+  "profile": {
+    "title": "My Profile",
+    "personal_info": "Personal Information",
+    "contact_info": "Contact Information",
+    "account_info": "Account Information",
+    "first_name": "First Name",
+    "last_name": "Last Name",
+    "country": "Country",
+    "national_id": "DNI / NIF",
+    "passport": "Passport",
+    "email": "Email",
+    "phone": "Phone",
+    "patient_id": "Patient ID",
+    "member_since": "Member since",
+    "last_updated": "Last updated",
+    "edit": "Edit",
+    "edit_personal_data": "Edit personal data",
+    "save": "Save changes",
+    "saving": "Saving…",
+    "cancel": "Cancel",
+    "unsaved_changes_title": "Unsaved changes",
+    "unsaved_changes_message": "You have unsaved changes. Discard them?",
+    "discard": "Discard",
+    "keep_editing": "Keep editing",
+    "verify_title": "Verify your identity",
+    "verify_description": "Enter your current password to update your {field}",
+    "verify_password_label": "Current password",
+    "verify_password_required": "Password is required",
+    "verify_button": "Verify",
+    "verifying": "Verifying…",
+    "verify_error": "Incorrect password. Try again.",
+    "wrong_password": "Wrong password. Please verify your password and try again.",
+    "update_success": "Profile updated successfully",
+    "update_error": "Failed to update profile",
+    "not_available": "Not provided",
+    "modal": {
+      "close_aria": "Close"
+    },
+    "edit_info": "Edit info",
+    "logout": "Log out"
+  },
+  "upload": {
+    "idle": "Drag and drop a file here, or click to browse",
+    "dragover": "Drop your file here",
+    "selected": "Selected: {fileName} ({fileSize})",
+    "uploading": "Uploading…",
+    "error_type": "File type not supported",
+    "error_size": "File exceeds maximum size of 150 MB",
+    "error_empty": "File is empty",
+    "browse": "Browse files"
+  },
+  "send_wizard": {
+    "step_label": "Send Document — Step {step} of {total}",
+    "cancel": "Cancel",
+    "back": "Back",
+    "next": "Next",
+    "upload_fail": "Upload failed",
+    "metadata_title": "Document Metadata",
+    "metadata_title_label": "Title",
+    "metadata_description_label": "Description",
+    "metadata_save": "Save",
+    "metadata_saving": "Saving…",
+    "metadata_title_required": "Title is required",
+    "metadata_save_fail": "Failed to save metadata",
+    "recipients_title": "Add Recipients",
+    "search_placeholder": "Search contacts or users…",
+    "search_no_options": "No contacts or users found",
+    "search_loading": "Searching…",
+    "search_clear": "Clear",
+    "search_close": "Close",
+    "search_open": "Open",
+    "search_contact_label": "Contact",
+    "search_user_label": "User",
+    "recipients_empty": "No recipients added yet. Search above to add recipients.",
+    "recipients_duplicate": "This recipient has already been added",
+    "recipient_type_manual": "Manual",
+    "recipient_save_as_contact": "Save as contact",
+    "recipient_remove": "Remove {email}",
+    "confirm_title": "Confirm & Send",
+    "confirm_document_label": "Document",
+    "confirm_recipients_single": "{count} recipient",
+    "confirm_recipients_multi": "{count} recipients",
+    "confirm_send": "Send",
+    "confirm_sending": "Sending…",
+    "confirm_send_fail": "Failed to send document",
+    "send_success": "Document sent successfully"
+  },
+  "contacts": {
+    "page_title": "Contacts",
+    "search_placeholder": "Search contacts...",
+    "search_clear": "Clear search",
+    "searching": "Searching...",
+    "no_results": "No contacts match your search.",
+    "cancel": "Cancel",
+    "add_contact": "Add contact",
+    "add_contact_title": "Add contact",
+    "add_contact_subtitle": "Search for a registered user to add as a contact",
+    "search_users_label": "Search users",
+    "no_users_found": "No users found",
+    "contact_added": "Contact added successfully",
+    "contact_exists": "Contact already exists",
+    "contact_add_error": "Failed to add contact",
+    "load_error": "Failed to load contacts",
+    "retry": "Retry",
+    "empty": "No contacts yet. Save recipients from the send flow.",
+    "delete_success": "Contact deleted",
+    "delete_fail": "Failed to delete contact",
+    "delete_aria_label": "Delete {email}"
+  },
+  "history": {
+    "title": "History",
+    "empty": {
+      "title": "No documents yet",
+      "description": "Sent and received document activity will appear here."
+    },
+    "error": {
+      "title": "Error loading history",
+      "retry": "Try again"
+    },
+    "events": {
+      "sent": "Sent to {name}",
+      "received": "Received from {name}",
+      "signed": "Signed by {name}",
+      "signedByYou": "Signed by you",
+      "rejected": "Rejected by {name}",
+      "rejectedByYou": "Rejected by you",
+      "revoked": "Revoked by {name}",
+      "revokedByYou": "Revoked by you"
+    }
+  },
+  "signer_consent": {
+    "title_sign": "You are about to sign this document",
+    "title_reject": "You are about to reject this document",
+    "title_revoke": "You are about to revoke this document",
+    "body_sign_p1": "You are about to electronically sign \"{documentName}\". This action has legal validity and cannot be undone once completed.",
+    "body_sign_p2": "Upon confirmation, your IP address, the device used, and the exact time of the operation will be recorded, and you must verify your identity with a code we will send to your email. All this information is associated with your signature as evidence, in accordance with our <policy>Electronic Signature Policy</policy>.",
+    "body_reject_p1": "You are about to reject \"{documentName}\". This action has legal validity and cannot be undone once completed.",
+    "body_reject_p2": "Upon confirmation, your IP address, the device used, and the exact time of the operation will be recorded, and you must verify your identity with a code we will send to your email. All this information is associated with this action as evidence, in accordance with our <policy>Electronic Signature Policy</policy>.",
+    "body_revoke_p1": "You are about to revoke \"{documentName}\". This action has legal validity and cannot be undone once completed.",
+    "body_revoke_p2": "Upon confirmation, your IP address, the device used, and the exact time of the operation will be recorded, and you must verify your identity with a code we will send to your email. All this information is associated with this action as evidence, in accordance with our <policy>Electronic Signature Policy</policy>.",
+    "body_review": "Before continuing, make sure you have reviewed the entire content of the document.",
+    "checkbox_label": "I have read the document and understand that by confirming I am signing it electronically with legal validity.",
+    "cancel": "Cancel",
+    "confirm": "Confirm and continue",
+    "policy_link": "Electronic Signature Policy"
+  }
+}

@@ -1,0 +1,49 @@
+name: CI Pull Request
+
+# Runs on PRs targeting dev: a lightweight gate (no e2e, no Docker) that
+# lints, checks formatting, typechecks, runs unit tests and builds the app.
+on:
+  pull_request:
+    branches:
+      - dev
+
+permissions:
+  contents: read
+
+jobs:
+  ci:
+    name: Lint, format, typecheck, test and build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      # Fails the build on known high-or-above severity vulnerabilities in dependencies.
+      - name: Audit dependencies
+        run: npm audit --audit-level=high
+
+      - name: Run linter
+        run: npm run lint
+
+      - name: Check formatting
+        run: npm run format:check
+
+      - name: Type check
+        run: npm run typecheck
+
+      - name: Run unit tests
+        run: npm run test
+
+      - name: Build application
+        run: npm run build
+

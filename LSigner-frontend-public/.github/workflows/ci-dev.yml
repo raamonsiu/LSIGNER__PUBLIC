@@ -1,0 +1,108 @@
+name: CI Dev Push
+
+# Runs on every push to dev: validates the branch end-to-end (lint, format,
+# typecheck, unit tests, build, e2e), then builds the production Docker image
+# and smoke-tests that the running container actually serves pages.
+on:
+  push:
+    branches:
+      - dev
+
+permissions:
+  contents: read
+
+jobs:
+  integration:
+    name: Validate dev branch
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      # Fails the build on known high-or-above severity vulnerabilities in dependencies.
+      - name: Audit dependencies
+        run: npm audit --audit-level=high
+
+      - name: Run linter
+        run: npm run lint
+
+      - name: Check formatting
+        run: npm run format:check
+
+      - name: Type check
+        run: npm run typecheck
+
+      - name: Run unit tests
+        run: npm run test
+
+      - name: Build application
+        run: npm run build
+
+      # Caches installed browser binaries across runs, keyed on the lockfile,
+      # so Playwright only re-downloads Chromium when dependencies change.
+      - name: Cache Playwright browsers
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+
+      - name: Install Playwright browsers
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: npx playwright install --with-deps chromium
+
+      - name: Run e2e tests
+        run: npm run test:e2e
+
+  # Builds and runs the actual production Docker image (not just `npm run build`)
+  # to catch issues that only show up in the containerized runtime.
+  smoke-test:
+    name: Docker smoke test — legal page
+    runs-on: ubuntu-latest
+    needs: integration
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # NEXT_PUBLIC_* values are baked into the client bundle at build time (see
+      # Dockerfile), so dummy/CI values are passed here : this smoke test only
+      # verifies the container serves pages, not that these values are correct.
+      - name: Build Docker image
+        run: |
+          docker build \
+            --build-arg NEXT_PUBLIC_API_URL=http://localhost:3000 \
+            --build-arg NEXT_PUBLIC_APP_VERSION=ci-smoke \
+            --build-arg NEXT_PUBLIC_APP_TAGLINE=CI \
+            --build-arg NEXT_PUBLIC_ACKEE_SERVER= \
+            --build-arg NEXT_PUBLIC_ACKEE_DOMAIN_ID= \
+            -t lsigner-smoke .
+
+      # Starts the built image and polls a known page until it responds 200,
+      # proving the container boots and Next.js serves traffic correctly.
+      - name: Start container and smoke test
+        run: |
+          docker run --rm -d -p 3000:3000 --name lsigner-smoke-container lsigner-smoke
+          # Wait for Next.js to be ready
+          for i in $(seq 1 30); do
+            if curl -s -o /dev/null -w "%{http_code}" http://localhost:3000/legal/privacy-policy | grep -q 200; then
+              echo "Legal page returned 200 — smoke test passed"
+              docker stop lsigner-smoke-container
+              exit 0
+            fi
+            echo "Waiting for server... attempt $i/30"
+            sleep 2
+          done
+          echo "Smoke test failed: legal page did not return 200 within timeout"
+          docker logs lsigner-smoke-container
+          docker stop lsigner-smoke-container
+          exit 1

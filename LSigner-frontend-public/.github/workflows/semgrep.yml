@@ -1,0 +1,35 @@
+name: Semgrep
+
+# Runs on PRs targeting dev, uat or main: performs a static application
+# security testing (SAST) scan of the changed code with Semgrep.
+on:
+  pull_request:
+    branches:
+      - dev
+      - uat
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  semgrep:
+    name: Semgrep scan
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Semgrep
+        run: pip install semgrep
+
+      # "auto" pulls Semgrep's community/default rulesets appropriate for
+      # the detected languages in the repo.
+      - name: Run Semgrep
+        run: semgrep --config auto

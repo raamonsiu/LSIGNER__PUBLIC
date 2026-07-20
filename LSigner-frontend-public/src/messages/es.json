@@ -1,0 +1,581 @@
+{
+  "common": {
+    "brand": {
+      "title": "LSigner",
+      "subtitle": "Proveedor de Firma Electrónica",
+      "tagline": "Espacio de trabajo de confianza"
+    },
+    "theme": {
+      "light": "Modo claro",
+      "dark": "Modo oscuro"
+    },
+    "language": {
+      "en": "English",
+      "es": "Español",
+      "ca": "Català"
+    },
+    "google_placeholder": {
+      "login": "Próximamente — inicio de sesión con Google",
+      "register": "Próximamente — registro con Google"
+    },
+    "coming_soon": "Próximamente"
+  },
+  "nav": {
+    "home": "Inicio",
+    "sent": "Enviados",
+    "received": "Recibidos",
+    "history": "Historial",
+    "contacts": "Contactos",
+    "security": "Seguridad",
+    "settings": "Ajustes",
+    "new_document": "Nuevo Documento"
+  },
+  "login": {
+    "page": {
+      "title": "Iniciar sesión",
+      "subtitle": "Accede a tu espacio de documentos seguro"
+    },
+    "form": {
+      "email_label": "Correo electrónico",
+      "email_required": "El email es obligatorio",
+      "email_invalid": "Introduce un email válido",
+      "password_label": "Contraseña",
+      "password_required": "La contraseña es obligatoria",
+      "show_password": "Mostrar contraseña",
+      "hide_password": "Ocultar contraseña",
+      "forgot_password": "¿Olvidaste tu contraseña?",
+      "submit": "Iniciar sesión",
+      "submitting": "Iniciando sesión…"
+    },
+    "divider": "O",
+    "google": "Continuar con Google",
+    "register_link": "¿No tienes cuenta?",
+    "register_link_action": "Regístrate",
+    "expired_session": "Tu sesión ha caducado. Por favor, inicia sesión de nuevo."
+  },
+  "register": {
+    "page": {
+      "title": "Crear cuenta",
+      "subtitle": "Completa los datos para registrarte"
+    },
+    "form": {
+      "name_label": "Nombre",
+      "name_required": "El nombre es obligatorio",
+      "last_name_label": "Apellidos",
+      "last_name_required": "Los apellidos son obligatorios",
+      "email_label": "Correo electrónico",
+      "email_required": "El email es obligatorio",
+      "email_invalid": "Introduce un email válido",
+      "country_label": "País",
+      "country_required": "El país es obligatorio",
+      "phone_label": "Teléfono",
+      "phone_required": "El teléfono es obligatorio",
+      "phone_placeholder": "Formato E.164, ej. +34654654654",
+      "phone_invalid": "Formato E.164 requerido (ej. +34654654654)",
+      "national_id_label": "DNI / NIF (opcional)",
+      "passport_label": "Pasaporte (opcional)",
+      "password_label": "Contraseña",
+      "password_required": "La contraseña es obligatoria",
+      "password_min_length": "Mínimo 8 caracteres",
+      "password_too_short": "La contraseña debe tener al menos 8 caracteres",
+      "confirm_password_label": "Confirmar contraseña",
+      "passwords_mismatch": "Las contraseñas no coinciden",
+      "show_password": "Mostrar contraseña",
+      "hide_password": "Ocultar contraseña",
+      "submit": "Crear cuenta",
+      "submitting": "Creando cuenta…"
+    },
+    "divider": "O",
+    "google": "Continuar con Google",
+    "login_link": "¿Ya tienes cuenta?",
+    "login_link_action": "Inicia sesión",
+    "legal": "Al crear una cuenta, aceptas los",
+    "legal_terms": "Términos de servicio",
+    "legal_connector": "y la",
+    "legal_privacy": "Política de privacidad",
+    "success_message": "Cuenta creada correctamente. Inicia sesión."
+  },
+  "dashboard": {
+    "metrics": {
+      "pending_signature": "Pendiente de tu firma",
+      "view_all": "Ver todos",
+      "waiting_for_others": "Esperando a otros",
+      "view_status": "Ver estado"
+    },
+    "security": {
+      "badge": "SEGURO",
+      "title": "Seguridad de Cuenta",
+      "description": "Estado de seguridad óptimo. Biometría y 2FA activados.",
+      "strength": "Robustez"
+    },
+    "upload": {
+      "title": "Subir Documento",
+      "drag_hint": "Arrastra un PDF o Word",
+      "select": "Selecciona un documento",
+      "compatibility": "Compatible con .pdf, .docx, .txt · Máx. 150 MB",
+      "button": "Subir documento"
+    },
+    "recent_documents": "Documentos Recientes",
+    "recent_sent_label": "Enviado",
+    "recent_received_label": "Recibido",
+    "messages": {
+      "load_error": "No se pudieron cargar los datos del panel.",
+      "retry": "Reintentar",
+      "empty": "No hay documentos recientes"
+    },
+    "status": {
+      "draft": "Borrador",
+      "voided": "Anulado",
+      "replaced": "Reemplazado",
+      "waiting": "Esperando",
+      "completed": "Completado"
+    }
+  },
+  "sent_documents": {
+    "metrics": {
+      "total_sent": "Total enviados",
+      "pending_final_signature": "Pendientes de firma final",
+      "unique_recipients": "Destinatarios únicos",
+      "completed": "Completados",
+      "total": "Total destinatarios",
+      "pending": "Pendientes",
+      "signed": "Firmados",
+      "rejected": "Rechazados",
+      "revoked": "Revocados"
+    },
+    "list": {
+      "title": "Documentos enviados",
+      "subtitle": "Una fila por destinatario — ve quién ha firmado y quién está pendiente."
+    },
+    "fields": {
+      "size": "Peso",
+      "sent_at": "Enviado",
+      "signed_at": "Firmado",
+      "recipient": "Destinatario",
+      "recipient_email": "Correo del destinatario",
+      "document": "Documento",
+      "status": "Estado"
+    },
+    "status": {
+      "draft": "Borrador",
+      "waiting": "Esperando",
+      "completed": "Completado",
+      "voided": "Anulado",
+      "superseded": "Reemplazado",
+      "deleted": "Eliminado"
+    },
+    "recipient_status": {
+      "pending": "Pendiente",
+      "signed": "Firmado",
+      "rejected": "Rechazado",
+      "revoked": "Revocado"
+    },
+    "modal": {
+      "title": "Detalle del documento",
+      "close": "Cerrar",
+      "view_document": "Ver documento",
+      "opening_document": "Abriendo...",
+      "send_reminder": "Mandar recordatorio",
+      "sending_reminder": "Mandando...",
+      "delete_document": "Eliminar compartido",
+      "confirm_delete": "Confirmar eliminar",
+      "deleting": "Eliminando...",
+      "delete_warning": "Se eliminará el acceso del destinatario y ya no podrá firmar este documento.",
+      "delete_keyword": "eliminar",
+      "type_delete_instruction": "Escribe \"{keyword}\" para confirmar.",
+      "delete_not_allowed": "No puedes eliminar el documento porque el destinatario ya realizó una acción."
+    },
+    "messages": {
+      "not_signed": "Aún no firmado",
+      "unknown_recipient": "Sin destinatario final",
+      "empty": "Todavía no has enviado documentos.",
+      "load_error": "No se han podido cargar los documentos enviados.",
+      "retry": "Reintentar",
+      "detail_prefetch_failed": "No se ha podido cargar el detalle del documento.",
+      "popup_blocked": "Bloqueador de ventanas emergentes activado. Permite ventanas emergentes para este sitio.",
+      "open_document_error": "No se pudo abrir el documento en una nueva pestaña.",
+      "reminder_sent": "Recordatorio enviado correctamente.",
+      "reminder_error": "No se pudo enviar el recordatorio.",
+      "document_deleted_shared": "Acceso compartido eliminado correctamente.",
+      "delete_error": "No se pudo eliminar el acceso compartido."
+    }
+  },
+  "received_documents": {
+    "metrics": {
+      "total_received": "Total recibidos",
+      "pending_my_signature": "Pendientes de mi firma",
+      "signed_by_me": "Firmados por mí",
+      "rejected_or_revoked": "Rechazados o revocados"
+    },
+    "list": {
+      "title": "Documentos recibidos"
+    },
+    "fields": {
+      "size": "Peso",
+      "received_at": "Recibido",
+      "signed_at": "Firmado",
+      "expires": "Vence",
+      "sender": "Remitente",
+      "status": "Estado"
+    },
+    "status": {
+      "pending": "Pendiente",
+      "signed": "Firmado",
+      "rejected": "Rechazado",
+      "revoked": "Revocado",
+      "blocked": "Bloqueado"
+    },
+    "modal": {
+      "title": "Detalle del documento",
+      "close": "Cerrar",
+      "view_document": "Ver documento",
+      "opening_document": "Abriendo...",
+      "sender_deleted": "El usuario que ha enviado este documento ya no existe. Puedes seguir viendo el documento, pero las acciones de firma ya no están disponibles."
+    },
+    "unlock": {
+      "title": "Documento bloqueado",
+      "description": "Este documento está protegido. Resuelve todos los bloqueos para acceder.",
+      "step_label": "Paso {current} de {total}",
+      "lock_password": "Bloqueo por contraseña",
+      "password_placeholder": "Introduce la contraseña del documento",
+      "unlock_button": "Desbloquear",
+      "unlocking": "Desbloqueando\u2026",
+      "unlock_success": "Documento desbloqueado correctamente",
+      "wrong_password": "Contraseña incorrecta. Inténtalo de nuevo.",
+      "unlock_error": "No se pudo desbloquear el documento. Inténtalo de nuevo.",
+      "checking_locks": "Comprobando bloqueos\u2026",
+      "locked_summary_single": "1 bloqueo por resolver",
+      "locked_summary_multi": "{count} bloqueos por resolver"
+    },
+    "document_actions": {
+      "sign": "Firmar",
+      "reject": "Rechazar",
+      "revoke": "Revocar",
+      "signing": "Firmando\u2026",
+      "rejecting": "Rechazando\u2026",
+      "revoking": "Revocando\u2026",
+      "download": "Descargar",
+      "back": "Volver",
+      "close_preview": "Cerrar vista previa",
+      "document_info": "Información del documento",
+      "name": "Nombre",
+      "sender": "Remitente",
+      "size": "Peso",
+      "status": "Estado",
+      "preview_unavailable": "Vista previa no disponible",
+      "preview_title": "Vista previa del documento",
+      "preview_error": "No se pudo cargar la vista previa",
+      "processing": "Procesando\u2026"
+    },
+    "otp": {
+      "title": "Verifica tu identidad",
+      "description": "Hemos enviado un código de verificación a <b>{destination}</b>",
+      "code_label": "Código de verificación",
+      "code_placeholder": "Introduce el código de 6 dígitos",
+      "code_required": "El código de verificación es obligatorio",
+      "code_invalid": "Formato de código inválido",
+      "verify_button": "Verificar",
+      "verifying": "Verificando\u2026",
+      "resend_button": "Reenviar código",
+      "resending": "Reenviando\u2026",
+      "resend_available_in": "Reenvío disponible en {seconds}s",
+      "verified_success": "Identidad verificada correctamente",
+      "verify_error": "No se pudo verificar el código. Inténtalo de nuevo.",
+      "expired_error": "El código ha expirado. Solicita uno nuevo.",
+      "wrong_code": "Código incorrecto. {remaining} intentos restantes.",
+      "too_many_attempts": "Demasiados intentos incorrectos. Inténtalo más tarde.",
+      "action_success_sign": "Documento firmado correctamente",
+      "action_success_reject": "Documento rechazado correctamente",
+      "action_success_revoke": "Firma revocada correctamente",
+      "cancel_button": "Cancelar"
+    },
+    "messages": {
+      "not_signed": "Aún no firmado",
+      "empty": "Todavía no has recibido documentos.",
+      "load_error": "No se han podido cargar los documentos recibidos.",
+      "retry": "Reintentar",
+      "detail_prefetch_failed": "No se ha podido cargar el detalle del documento.",
+      "open_document_error": "No se pudo abrir el documento en una nueva pestaña.",
+      "signed_before_expiry": "Firmado antes del vencimiento.",
+      "expires_on": "Vence el",
+      "mock_preview_unavailable": "Vista previa no disponible en modo demo",
+      "resolve_locks_first": "Debes resolver todos los bloqueos antes de abrir este archivo."
+    }
+  },
+  "public_page": {
+    "auth_required": "Autenticación requerida. Por favor, inicia sesión.",
+    "invalid_link": "Enlace público inválido o expirado.",
+    "session_invalid": "La sesión pública es inválida o ha expirado.",
+    "load_error": "No se pudo cargar el documento compartido.",
+    "wrong_password": "Contraseña incorrecta. Inténtalo de nuevo.",
+    "resolve_locks_error": "No se pudieron resolver todos los bloqueos.",
+    "start_flow_error": "No se pudo iniciar el flujo de verificación.",
+    "code_expired": "Código expirado. Solicita un nuevo código.",
+    "wrong_code": "Código incorrecto. Inténtalo de nuevo.",
+    "verify_error": "No se pudo verificar el código.",
+    "resend_error": "No se pudo reenviar el código.",
+    "unlocked_success": "Documento desbloqueado correctamente.",
+    "action_completed": "Acción completada correctamente.",
+    "unresolved_locks": "Este documento tiene {count} bloqueo(s) sin resolver.",
+    "document_password": "Contraseña del documento",
+    "unlock": "Desbloquear",
+    "unlocking": "Desbloqueando\u2026",
+    "download": "Descargar",
+    "reject": "Rechazar",
+    "sign": "Firmar",
+    "revoke": "Revocar",
+    "end_session": "Finalizar sesión",
+    "sender_label": "Remitente",
+    "file_label": "Archivo"
+  },
+  "settings": {
+    "sidebar": {
+      "title": "En esta página"
+    },
+    "sections": {
+      "user": "Usuario",
+      "platform": "Plataforma",
+      "docs": "Documentos Legales",
+      "cookies": "Cookies y Políticas",
+      "danger-zone": "Zona de Peligro"
+    },
+    "platform": {
+      "appearance": "Apariencia",
+      "preferences": "Preferencias",
+      "language": "Idioma",
+      "theme": "Tema",
+      "notifications": "Notificaciones",
+      "reduced_motion": "Movimiento reducido",
+      "language_aria": "Seleccionar idioma",
+      "theme_aria": "Alternar tema",
+      "notifications_aria": "Alternar notificaciones",
+      "reduced_motion_aria": "Alternar movimiento reducido",
+      "notifications_tooltip": "Notificaciones dentro de la app — no son notificaciones push",
+      "reduced_motion_tooltip": "Reduce las animaciones y efectos de movimiento para mayor comodidad"
+    },
+    "dangerZone": {
+      "title": "Zona de Peligro",
+      "description": "Elimina permanentemente tu cuenta y todos los datos asociados",
+      "deleteButton": "Eliminar cuenta",
+      "confirmTitle": "¿Estás seguro?",
+      "confirmDescription": "Esta acción es irreversible. Escribe \"confirmar\" para continuar",
+      "confirmPlaceholder": "confirmar",
+      "confirmButton": "Eliminar cuenta definitivamente",
+      "successSnackbar": "Cuenta eliminada correctamente",
+      "errorSnackbar": "Error al eliminar la cuenta",
+      "legalLinkLabel": "Política de Retención de Documentos",
+      "legalDescription": "Consulta nuestra política de retención y eliminación de datos para más información sobre cómo se gestionan tus datos tras la eliminación de la cuenta."
+    }
+  },
+  "legal": {
+    "titles": {
+      "legal-notice": "Aviso Legal",
+      "privacy-policy": "Política de Privacidad",
+      "cookie-policy": "Política de Cookies",
+      "terms-and-conditions": "Términos y Condiciones",
+      "electronic-signature-policy": "Política de Firma Electrónica",
+      "data-processing-agreement": "Acuerdo de Procesamiento de Datos (DPA)",
+      "document-retention-policy": "Política de Retención de Documentos"
+    },
+    "page": {
+      "title": "Documentos Legales",
+      "not_found": "Documento no encontrado"
+    }
+  },
+  "topbar": {
+    "breadcrumbs": {
+      "home": "Inicio",
+      "documents": "Documentos",
+      "sent": "Enviados",
+      "received": "Recibidos",
+      "new_document": "Nuevo Documento",
+      "history": "Historial",
+      "contacts": "Contactos",
+      "security": "Seguridad",
+      "settings": "Ajustes",
+      "profile": "Perfil"
+    },
+    "titles": {
+      "dashboard": "Panel de control",
+      "documents": "Documentos",
+      "sent": "Enviados",
+      "received": "Recibidos",
+      "new_document": "Nuevo Documento",
+      "history": "Historial",
+      "contacts": "Contactos",
+      "security": "Seguridad",
+      "settings": "Ajustes",
+      "profile": "Mi Perfil"
+    },
+    "pro_account": "Cuenta Pro",
+    "notifications": {
+      "coming_soon": "Notificaciones próximamente",
+      "unavailable_aria": "Notificaciones no disponibles"
+    }
+  },
+  "errors": {
+    "generic": "Error inesperado. Inténtalo de nuevo.",
+    "credentials": "Credenciales incorrectas. Comprueba tu email y contraseña.",
+    "timeout": "La solicitud ha tardado demasiado. Comprueba tu conexión.",
+    "server": "Error del servidor. Inténtalo de nuevo más tarde.",
+    "session_expired": "Sesión expirada"
+  },
+  "dates": {
+    "minutes_ago": "hace {minutes} min",
+    "hours_ago": "hace {hours}h",
+    "yesterday": "ayer",
+    "days_ago": "hace {days} días",
+    "weeks_ago": "hace {weeks} sem"
+  },
+  "greeting": {
+    "morning": "Buenos días",
+    "afternoon": "Buenas tardes",
+    "evening": "Buenas noches"
+  },
+  "profile": {
+    "title": "Mi Perfil",
+    "personal_info": "Información Personal",
+    "contact_info": "Información de Contacto",
+    "account_info": "Información de la Cuenta",
+    "first_name": "Nombre",
+    "last_name": "Apellidos",
+    "country": "País",
+    "national_id": "DNI / NIF",
+    "passport": "Pasaporte",
+    "email": "Correo electrónico",
+    "phone": "Teléfono",
+    "patient_id": "ID de Paciente",
+    "member_since": "Miembro desde",
+    "last_updated": "Última actualización",
+    "edit": "Editar",
+    "edit_personal_data": "Editar datos personales",
+    "save": "Guardar cambios",
+    "saving": "Guardando…",
+    "cancel": "Cancelar",
+    "unsaved_changes_title": "Cambios sin guardar",
+    "unsaved_changes_message": "Tienes cambios sin guardar. ¿Descartarlos?",
+    "discard": "Descartar",
+    "keep_editing": "Seguir editando",
+    "verify_title": "Verifica tu identidad",
+    "verify_description": "Introduce tu contraseña actual para actualizar tu {field}",
+    "verify_password_label": "Contraseña actual",
+    "verify_password_required": "La contraseña es obligatoria",
+    "verify_button": "Verificar",
+    "verifying": "Verificando…",
+    "verify_error": "Contraseña incorrecta. Inténtalo de nuevo.",
+    "wrong_password": "Contraseña incorrecta. Verifica tu contraseña e inténtalo de nuevo.",
+    "update_success": "Perfil actualizado correctamente",
+    "update_error": "Error al actualizar el perfil",
+    "not_available": "No proporcionado",
+    "modal": {
+      "close_aria": "Cerrar"
+    },
+    "edit_info": "Editar información",
+    "logout": "Cerrar sesión"
+  },
+  "upload": {
+    "idle": "Arrastra un archivo aquí o haz clic para seleccionar",
+    "dragover": "Suelta tu archivo aquí",
+    "selected": "Seleccionado: {fileName} ({fileSize})",
+    "uploading": "Subiendo…",
+    "error_type": "Tipo de archivo no compatible",
+    "error_size": "El archivo supera el tamaño máximo de 150 MB",
+    "error_empty": "El archivo está vacío",
+    "browse": "Seleccionar archivos"
+  },
+  "send_wizard": {
+    "step_label": "Enviar documento — Paso {step} de {total}",
+    "cancel": "Cancelar",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "upload_fail": "Error al subir el archivo",
+    "metadata_title": "Metadatos del documento",
+    "metadata_title_label": "Título",
+    "metadata_description_label": "Descripción",
+    "metadata_save": "Guardar",
+    "metadata_saving": "Guardando…",
+    "metadata_title_required": "El título es obligatorio",
+    "metadata_save_fail": "Error al guardar los metadatos",
+    "recipients_title": "Añadir destinatarios",
+    "search_placeholder": "Buscar contactos o usuarios…",
+    "search_no_options": "No se encontraron contactos o usuarios",
+    "search_loading": "Buscando…",
+    "search_clear": "Limpiar",
+    "search_close": "Cerrar",
+    "search_open": "Abrir",
+    "search_contact_label": "Contacto",
+    "search_user_label": "Usuario",
+    "recipients_empty": "No hay destinatarios añadidos. Usa la búsqueda para añadir destinatarios.",
+    "recipients_duplicate": "Este destinatario ya ha sido añadido",
+    "recipient_type_manual": "Manual",
+    "recipient_save_as_contact": "Guardar como contacto",
+    "recipient_remove": "Quitar {email}",
+    "confirm_title": "Confirmar y enviar",
+    "confirm_document_label": "Documento",
+    "confirm_recipients_single": "{count} destinatario",
+    "confirm_recipients_multi": "{count} destinatarios",
+    "confirm_send": "Enviar",
+    "confirm_sending": "Enviando…",
+    "confirm_send_fail": "Error al enviar el documento",
+    "send_success": "Documento enviado correctamente"
+  },
+  "contacts": {
+    "page_title": "Contactos",
+    "search_placeholder": "Buscar contactos...",
+    "search_clear": "Limpiar búsqueda",
+    "searching": "Buscando...",
+    "no_results": "Ningún contacto coincide con la búsqueda.",
+    "cancel": "Cancelar",
+    "add_contact": "Añadir contacto",
+    "add_contact_title": "Añadir contacto",
+    "add_contact_subtitle": "Busca un usuario registrado para añadir como contacto",
+    "search_users_label": "Buscar usuarios",
+    "no_users_found": "No se encontraron usuarios",
+    "contact_added": "Contacto añadido correctamente",
+    "contact_exists": "El contacto ya existe",
+    "contact_add_error": "Error al añadir el contacto",
+    "load_error": "Error al cargar los contactos",
+    "retry": "Reintentar",
+    "empty": "Aún no tienes contactos. Guarda destinatarios desde el flujo de envío.",
+    "delete_success": "Contacto eliminado",
+    "delete_fail": "Error al eliminar el contacto",
+    "delete_aria_label": "Eliminar {email}"
+  },
+  "history": {
+    "title": "Historial",
+    "empty": {
+      "title": "Sin documentos aún",
+      "description": "La actividad de documentos enviados y recibidos aparecerá aquí."
+    },
+    "error": {
+      "title": "Error al cargar el historial",
+      "retry": "Intentar de nuevo"
+    },
+    "events": {
+      "sent": "Enviado a {name}",
+      "received": "Recibido de {name}",
+      "signed": "Firmado por {name}",
+      "signedByYou": "Firmado por ti",
+      "rejected": "Rechazado por {name}",
+      "rejectedByYou": "Rechazado por ti",
+      "revoked": "Revocado por {name}",
+      "revokedByYou": "Revocado por ti"
+    }
+  },
+  "signer_consent": {
+    "title_sign": "Vas a firmar este documento",
+    "title_reject": "Vas a rechazar este documento",
+    "title_revoke": "Vas a revocar este documento",
+    "body_sign_p1": "Estás a punto de firmar electrónicamente \"{documentName}\". Esta acción tiene validez legal y no podrá deshacerse una vez completada.",
+    "body_sign_p2": "Al confirmar, se registrará tu dirección IP, el dispositivo utilizado y la hora exacta de la operación, y deberás verificar tu identidad mediante un código que enviaremos a tu correo electrónico. Toda esta información queda asociada a tu firma como evidencia, conforme a nuestra <policy>Política de Firma Electrónica</policy>.",
+    "body_reject_p1": "Estás a punto de rechazar \"{documentName}\". Esta acción tiene validez legal y no podrá deshacerse una vez completada.",
+    "body_reject_p2": "Al confirmar, se registrará tu dirección IP, el dispositivo utilizado y la hora exacta de la operación, y deberás verificar tu identidad mediante un código que enviaremos a tu correo electrónico. Toda esta información queda asociada a esta acción como evidencia, conforme a nuestra <policy>Política de Firma Electrónica</policy>.",
+    "body_revoke_p1": "Estás a punto de revocar \"{documentName}\". Esta acción tiene validez legal y no podrá deshacerse una vez completada.",
+    "body_revoke_p2": "Al confirmar, se registrará tu dirección IP, el dispositivo utilizado y la hora exacta de la operación, y deberás verificar tu identidad mediante un código que enviaremos a tu correo electrónico. Toda esta información queda asociada a esta acción como evidencia, conforme a nuestra <policy>Política de Firma Electrónica</policy>.",
+    "body_review": "Antes de continuar, asegúrate de haber revisado el contenido completo del documento.",
+    "checkbox_label": "He leído el documento y entiendo que al confirmar estoy firmándolo electrónicamente con validez legal.",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar y continuar",
+    "policy_link": "Política de Firma Electrónica"
+  }
+}

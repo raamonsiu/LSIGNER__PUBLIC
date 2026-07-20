@@ -1,0 +1,19 @@
+name: lsigner-frontend-prod
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL}
+        NEXT_PUBLIC_APP_VERSION: ${NEXT_PUBLIC_APP_VERSION}
+        NEXT_PUBLIC_APP_TAGLINE: ${NEXT_PUBLIC_APP_TAGLINE}
+        NEXT_PUBLIC_ACKEE_SERVER: ${NEXT_PUBLIC_ACKEE_SERVER}
+        NEXT_PUBLIC_ACKEE_DOMAIN_ID: ${NEXT_PUBLIC_ACKEE_DOMAIN_ID}
+    container_name: lsigner-frontend
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - '3001:3000'
